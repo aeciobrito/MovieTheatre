@@ -1,6 +1,6 @@
 ﻿namespace MovieTheatrhe.Core.Models.Interfaces
 {
-    internal interface IEntity
+    public interface IEntity
     {
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; }

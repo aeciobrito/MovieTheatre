@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MovieTheatrhe.Core.Models
 {
-    internal class Ticket : IEntity
+    public class Ticket : IEntity
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [DisplayName("Movie Name")]
         public string MovieName { get; set; } = String.Empty;
@@ -32,5 +32,8 @@ namespace MovieTheatrhe.Core.Models
         {
             get => SalePrice - (StudioCutPercentage * SalePrice);
         }
+        public DateTime CreatedDate { get; set; }
+        public DateTime ModifiedDate { get; set; }
+        public bool IsActive { get; set; }
     } 
 }

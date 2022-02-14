@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace MovieTheatrhe.Core.Models
 {
-    internal class FoodItem : IEntity
+    public class FoodItem : IEntity
     {
         public int Id { get; set; }
         [DisplayName("Item Name")]
