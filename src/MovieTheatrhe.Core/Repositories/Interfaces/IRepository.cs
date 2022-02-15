@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace MovieTheatrhe.Core.Repositories.Interfaces
 {
-    internal interface IRepository<TEntity> where TEntity : class, IEntity
+    public interface IRepository<TEntity> where TEntity : class, IEntity
     {
         Task<List<TEntity>> GetAllAsync();
         Task<TEntity> GetAsync(int id);

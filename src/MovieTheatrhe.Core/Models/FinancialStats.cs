@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MovieTheatrhe.Core.Models
 {
-    internal class FinancialStats
+    public class FinancialStats
     {
         public int Id { get; set; }
 

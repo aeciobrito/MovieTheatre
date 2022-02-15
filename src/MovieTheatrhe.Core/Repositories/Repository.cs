@@ -6,14 +6,14 @@ using System.Linq.Expressions;
 
 namespace MovieTheatrhe.Core.Repositories
 {
-    public abstract class GenericRepository<TEntity, TContext> : IRepository<TEntity>
+    public abstract class Repository<TEntity, TContext> : IRepository<TEntity>
         where TEntity : class, IEntity
         where TContext : AppDbContext
     {
         public readonly TContext _context;
         public readonly DbSet<TEntity> _entities;
 
-        protected GenericRepository(TContext context)
+        protected Repository(TContext context)
         {
             _context = context;
             _entities = context.Set<TEntity>();

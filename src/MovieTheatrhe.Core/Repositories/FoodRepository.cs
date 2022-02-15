@@ -1,17 +1,18 @@
-﻿using MovieTheatrhe.Core.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using MovieTheatrhe.Core.Data;
 using MovieTheatrhe.Core.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MovieTheatrhe.Core.Repositories.Interfaces;
 
 namespace MovieTheatrhe.Core.Repositories
 {
-    internal class FoodRepository : GenericRepository<FoodItem, AppDbContext>
+    public class FoodRepository : Repository<FoodItem, AppDbContext>, IFoodRepository
     {
         public FoodRepository(AppDbContext context) : base(context)
         {
+
         }
+
+        public async Task<List<FoodItem>> GetAllSold()
+            => await _context.FoodItems.ToListAsync();
     }
 }

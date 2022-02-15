@@ -1,17 +1,17 @@
-﻿using MovieTheatrhe.Core.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using MovieTheatrhe.Core.Data;
 using MovieTheatrhe.Core.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MovieTheatrhe.Core.Repositories.Interfaces;
 
 namespace MovieTheatrhe.Core.Repositories
 {
-    internal class TicketRepository : GenericRepository<Ticket, AppDbContext>
+    internal class TicketRepository : Repository<Ticket, AppDbContext>, ITicketRepository
     {
         public TicketRepository(AppDbContext context) : base(context)
         {
         }
+
+        public async Task<List<Ticket>> GetAllSold()
+            => await _context.Tickets.ToListAsync();        
     }
 }

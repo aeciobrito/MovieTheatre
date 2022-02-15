@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace MovieTheatrhe.Core.Repositories.Interfaces
 {
-    internal interface IFoodRepository
+    public interface IFoodRepository : IRepository<FoodItem>
     {
-        List<FoodItem> GetAllSold();
-
+        Task<List<FoodItem>> GetAllSold();
     }
 }
