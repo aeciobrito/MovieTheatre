@@ -1,12 +1,7 @@
 ﻿using MovieTheatrhe.Core.Models;
 using MovieTheatrhe.Core.Repositories.Interfaces;
 using MovieTheatrhe.Core.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MovieTheatrhe.Core.Services
 {
