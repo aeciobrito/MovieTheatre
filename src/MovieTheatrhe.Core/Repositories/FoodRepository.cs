@@ -12,7 +12,7 @@ namespace MovieTheatrhe.Core.Repositories
 
         }
 
-        public async Task<List<FoodItem>> GetAllSold()
+        public async Task<List<FoodItem>> GetAllSoldAsync()
             => await _context.FoodItems.ToListAsync();
     }
 }

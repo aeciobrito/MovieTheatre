@@ -9,6 +9,6 @@ namespace MovieTheatrhe.Core.Repositories.Interfaces
 {
     public interface IFoodRepository : IRepository<FoodItem>
     {
-        Task<List<FoodItem>> GetAllSold();
+        Task<List<FoodItem>> GetAllSoldAsync();
     }
 }

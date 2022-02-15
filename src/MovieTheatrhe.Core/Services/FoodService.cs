@@ -4,6 +4,7 @@ using MovieTheatrhe.Core.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,37 +21,44 @@ namespace MovieTheatrhe.Core.Services
 
         public Task<FoodItem> AddAsync(FoodItem entity)
         {
-            throw new NotImplementedException();
+            //validation
+            return _foodRepo.AddAsync(entity);
         }
 
-        public Task<FoodItem> DeleteAsync(int id)
+        public async Task<FoodItem> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            //validation
+            return await _foodRepo.DeleteAsync(id);
         }
 
-        public Task<IEnumerable<FoodItem>> Find()
+        public async Task<IEnumerable<FoodItem>> Find(Expression<Func<FoodItem, bool>> predicate)
         {
-            throw new NotImplementedException();
+            //validation
+            return await _foodRepo.Find(predicate);
         }
 
-        public Task<List<FoodItem>> GetAllAsync()
+        public async Task<List<FoodItem>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            //validation
+            return await _foodRepo.GetAllAsync();
         }
 
-        public Task<List<FoodItem>> GetAllSold()
+        public async Task<List<FoodItem>> GetAllSold()
         {
-            throw new NotImplementedException();
+            //validation
+            return await _foodRepo.GetAllSoldAsync();
         }
 
-        public Task<FoodItem> GetAsync(int id)
+        public async Task<FoodItem> GetAsync(int id)
         {
-            throw new NotImplementedException();
+            //validation
+            return await _foodRepo.GetAsync(id);
         }
 
-        public Task<FoodItem> UpdateAsync(FoodItem entity)
+        public async Task<FoodItem> UpdateAsync(FoodItem entity)
         {
-            throw new NotImplementedException();
+            //validation
+            return await _foodRepo.UpdateAsync(entity);
         }
     }
 }

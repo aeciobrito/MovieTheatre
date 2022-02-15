@@ -11,7 +11,7 @@ namespace MovieTheatrhe.Core.Repositories
         {
         }
 
-        public async Task<List<Ticket>> GetAllSold()
+        public async Task<List<Ticket>> GetAllSoldAsync()
             => await _context.Tickets.ToListAsync();        
     }
 }

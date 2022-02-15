@@ -1,43 +1,59 @@
 ﻿using MovieTheatrhe.Core.Models;
+using MovieTheatrhe.Core.Repositories.Interfaces;
 using MovieTheatrhe.Core.Services.Interfaces;
+using System.Linq.Expressions;
 
 namespace MovieTheatrhe.Core.Services
 {
     public class TicketService : ITicketService
     {
+        private readonly ITicketRepository _ticketRepo;
+
+        public TicketService(ITicketRepository ticketRepo)
+        {
+            _ticketRepo = ticketRepo;
+        }
+
         public Task<Ticket> AddAsync(Ticket entity)
         {
-            throw new NotImplementedException();
+            //validation
+            return _ticketRepo.AddAsync(entity);
         }
 
-        public Task<Ticket> DeleteAsync(int id)
+        public async Task<Ticket> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            //validation
+            return await _ticketRepo.DeleteAsync(id);
         }
 
-        public Task<IEnumerable<Ticket>> Find()
+        public async Task<IEnumerable<Ticket>> Find(Expression<Func<Ticket, bool>> predicate)
         {
-            throw new NotImplementedException();
+            //validation
+            return await _ticketRepo.Find(predicate);
         }
 
-        public Task<List<Ticket>> GetAllAsync()
+        public async Task<List<Ticket>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            //validation
+            return await _ticketRepo.GetAllAsync();
         }
 
-        public Task<List<Ticket>> GetAllSold()
+        public async Task<List<Ticket>> GetAllSoldAsync()
         {
-            throw new NotImplementedException();
+            //validation
+            return await _ticketRepo.GetAllSoldAsync();
         }
 
-        public Task<Ticket> GetAsync(int id)
+        public async Task<Ticket> GetAsync(int id)
         {
-            throw new NotImplementedException();
+            //validation
+            return await _ticketRepo.GetAsync(id);
         }
 
-        public Task<Ticket> UpdateAsync(Ticket entity)
+        public async Task<Ticket> UpdateAsync(Ticket entity)
         {
-            throw new NotImplementedException();
+            //validation
+            return await _ticketRepo.UpdateAsync(entity);
         }
     }
 }

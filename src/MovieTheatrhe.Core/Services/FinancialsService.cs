@@ -19,8 +19,8 @@ namespace MovieTheatrhe.Core.Services
 
         public decimal GetTotalSold()
         {            
-            var foodSold = _foodRepo.GetAllSold().Result.Sum(x => x.Profit);
-            var ticketsSold = _ticketRepo.GetAllSold().Result.Sum(x => x.Profit);
+            var foodSold = _foodRepo.GetAllSoldAsync().Result.Sum(x => x.Profit);
+            var ticketsSold = _ticketRepo.GetAllSoldAsync().Result.Sum(x => x.Profit);
 
             return foodSold + ticketsSold;
         }
@@ -28,8 +28,8 @@ namespace MovieTheatrhe.Core.Services
         public FinancialStats GetStats()
         {
             FinancialStats stats = new FinancialStats();
-            var foodSold = _foodRepo.GetAllSold().Result;
-            var ticketsSold = _ticketRepo.GetAllSold().Result;
+            var foodSold = _foodRepo.GetAllSoldAsync().Result;
+            var ticketsSold = _ticketRepo.GetAllSoldAsync().Result;
 
             //Calculate Average Stats
             stats.AverageTicketProfit = ticketsSold.Sum(x => x.Profit) / ticketsSold.Sum(x => x.Quantity);

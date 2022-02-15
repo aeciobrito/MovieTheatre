@@ -1,4 +1,5 @@
 ﻿using MovieTheatrhe.Core.Models;
+using System.Linq.Expressions;
 
 namespace MovieTheatrhe.Core.Services.Interfaces
 {
@@ -14,7 +15,7 @@ namespace MovieTheatrhe.Core.Services.Interfaces
 
        Task<FoodItem> DeleteAsync(int id);
 
-        Task<IEnumerable<FoodItem>> Find();
+        Task<IEnumerable<FoodItem>> Find(Expression<Func<FoodItem, bool>> predicate);
 
         Task<List<FoodItem>> GetAllSold();
     }
