@@ -1,4 +1,4 @@
-﻿namespace MovieTheatrhe.Core.Models.Interfaces
+﻿namespace MovieTheatre.Core.Models.Interfaces
 {
     public interface IEntity
     {

@@ -1,7 +1,7 @@
-﻿using MovieTheatrhe.Core.Models;
+﻿using MovieTheatre.Core.Models;
 using System.Linq.Expressions;
 
-namespace MovieTheatrhe.Core.Services.Interfaces
+namespace MovieTheatre.Core.Services.Interfaces
 {
     public interface ITicketService
     {

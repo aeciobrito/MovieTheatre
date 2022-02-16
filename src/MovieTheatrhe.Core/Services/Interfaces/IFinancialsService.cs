@@ -1,6 +1,6 @@
-﻿using MovieTheatrhe.Core.Models;
+﻿using MovieTheatre.Core.Models;
 
-namespace MovieTheatrhe.Core.Services.Interfaces
+namespace MovieTheatre.Core.Services.Interfaces
 {
     public interface IFinancialsService
     {

@@ -1,8 +1,8 @@
-﻿using MovieTheatrhe.Core.Models.Interfaces;
+﻿using MovieTheatre.Core.Models.Interfaces;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace MovieTheatrhe.Core.Models
+namespace MovieTheatre.Core.Models
 {
     public class Ticket : IEntity
     {

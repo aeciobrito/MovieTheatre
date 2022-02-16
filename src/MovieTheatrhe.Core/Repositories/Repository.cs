@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MovieTheatrhe.Core.Data;
-using MovieTheatrhe.Core.Models.Interfaces;
-using MovieTheatrhe.Core.Repositories.Interfaces;
+using MovieTheatre.Core.Data;
+using MovieTheatre.Core.Models.Interfaces;
+using MovieTheatre.Core.Repositories.Interfaces;
 using System.Linq.Expressions;
 
-namespace MovieTheatrhe.Core.Repositories
+namespace MovieTheatre.Core.Repositories
 {
     public abstract class Repository<TEntity, TContext> : IRepository<TEntity>
         where TEntity : class, IEntity

@@ -1,6 +1,6 @@
-﻿using MovieTheatrhe.Core.Models;
+﻿using MovieTheatre.Core.Models;
 
-namespace MovieTheatrhe.Core.Repositories.Interfaces
+namespace MovieTheatre.Core.Repositories.Interfaces
 {
     public interface ITicketRepository : IRepository<Ticket>
     {

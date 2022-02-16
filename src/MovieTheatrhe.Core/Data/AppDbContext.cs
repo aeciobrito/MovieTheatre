@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MovieTheatrhe.Core.Models;
+using MovieTheatre.Core.Models;
 
-namespace MovieTheatrhe.Core.Data
+namespace MovieTheatre.Core.Data
 {
     public class AppDbContext : DbContext
     {

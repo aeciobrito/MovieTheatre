@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MovieTheatrhe.Core.Data;
-using MovieTheatrhe.Core.Models;
-using MovieTheatrhe.Core.Repositories.Interfaces;
+using MovieTheatre.Core.Data;
+using MovieTheatre.Core.Models;
+using MovieTheatre.Core.Repositories.Interfaces;
 
-namespace MovieTheatrhe.Core.Repositories
+namespace MovieTheatre.Core.Repositories
 {
     public class FoodRepository : Repository<FoodItem, AppDbContext>, IFoodRepository
     {

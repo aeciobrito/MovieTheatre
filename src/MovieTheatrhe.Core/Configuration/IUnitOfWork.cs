@@ -1,6 +1,6 @@
-﻿using MovieTheatrhe.Core.Repositories.Interfaces;
+﻿using MovieTheatre.Core.Repositories.Interfaces;
 
-namespace MovieTheatrhe.Core.Configuration
+namespace MovieTheatre.Core.Configuration
 {
     public interface IUnitOfWork
     {

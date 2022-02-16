@@ -1,7 +1,7 @@
-﻿using MovieTheatrhe.Core.Models.Interfaces;
+﻿using MovieTheatre.Core.Models.Interfaces;
 using System.ComponentModel;
 
-namespace MovieTheatrhe.Core.Models
+namespace MovieTheatre.Core.Models
 {
     public class FoodItem : IEntity
     {

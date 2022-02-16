@@ -1,9 +1,9 @@
-﻿using MovieTheatrhe.Core.Models;
-using MovieTheatrhe.Core.Repositories.Interfaces;
-using MovieTheatrhe.Core.Services.Interfaces;
+﻿using MovieTheatre.Core.Models;
+using MovieTheatre.Core.Repositories.Interfaces;
+using MovieTheatre.Core.Services.Interfaces;
 using System.Linq.Expressions;
 
-namespace MovieTheatrhe.Core.Services
+namespace MovieTheatre.Core.Services
 {
     public class TicketService : ITicketService
     {

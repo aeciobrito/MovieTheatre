@@ -1,7 +1,7 @@
-﻿using MovieTheatrhe.Core.Models.Interfaces;
+﻿using MovieTheatre.Core.Models.Interfaces;
 using System.Linq.Expressions;
 
-namespace MovieTheatrhe.Core.Repositories.Interfaces
+namespace MovieTheatre.Core.Repositories.Interfaces
 {
     public interface IRepository<TEntity> where TEntity : class, IEntity
     {

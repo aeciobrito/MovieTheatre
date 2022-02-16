@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Logging;
-using MovieTheatrhe.Core.Data;
-using MovieTheatrhe.Core.Repositories;
-using MovieTheatrhe.Core.Repositories.Interfaces;
+using MovieTheatre.Core.Data;
+using MovieTheatre.Core.Repositories;
+using MovieTheatre.Core.Repositories.Interfaces;
 
-namespace MovieTheatrhe.Core.Configuration
+namespace MovieTheatre.Core.Configuration
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
     {

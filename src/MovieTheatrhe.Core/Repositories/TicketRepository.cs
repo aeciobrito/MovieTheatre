@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MovieTheatrhe.Core.Data;
-using MovieTheatrhe.Core.Models;
-using MovieTheatrhe.Core.Repositories.Interfaces;
+using MovieTheatre.Core.Data;
+using MovieTheatre.Core.Models;
+using MovieTheatre.Core.Repositories.Interfaces;
 
-namespace MovieTheatrhe.Core.Repositories
+namespace MovieTheatre.Core.Repositories
 {
-    internal class TicketRepository : Repository<Ticket, AppDbContext>, ITicketRepository
+    public class TicketRepository : Repository<Ticket, AppDbContext>, ITicketRepository
     {
         public TicketRepository(AppDbContext context) : base(context)
         {
